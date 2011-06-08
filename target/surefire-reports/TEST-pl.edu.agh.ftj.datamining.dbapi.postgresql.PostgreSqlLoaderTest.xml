@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="0.141" errors="0" skipped="0" tests="1" name="pl.edu.agh.ftj.datamining.dbapi.postgresql.PostgreSqlLoaderTest">
+<testsuite failures="0" time="2.033" errors="1" skipped="0" tests="1" name="pl.edu.agh.ftj.datamining.dbapi.postgresql.PostgreSqlLoaderTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.6.0_20\jre\bin"/>
@@ -19,7 +19,7 @@
     <property name="basedir" value="C:\Users\janek\Documents\NetBeansProjects\WekaDBApi\WekaDBApi"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.6.0_20\jre\lib\endorsed"/>
     <property name="os.arch" value="x86"/>
-    <property name="surefire.real.class.path" value="C:\Users\janek\AppData\Local\Temp\surefirebooter5681787468048139353.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\janek\AppData\Local\Temp\surefirebooter8792816424799794235.jar"/>
     <property name="java.io.tmpdir" value="C:\Users\janek\AppData\Local\Temp\"/>
     <property name="line.separator" value="
 "/>
@@ -59,5 +59,51 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
   </properties>
-  <testcase time="0.139" classname="pl.edu.agh.ftj.datamining.dbapi.postgresql.PostgreSqlLoaderTest" name="testGetInstances"/>
+  <testcase time="2.029" classname="pl.edu.agh.ftj.datamining.dbapi.postgresql.PostgreSqlLoaderTest" name="testGetInstances">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at pl.edu.agh.ftj.datamining.dbapi.postgresql.PostgreSqlLoaderTest.testGetInstances(PostgreSqlLoaderTest.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:73)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:46)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:62)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.executeTestSet(AbstractDirectoryTestSuite.java:140)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.execute(AbstractDirectoryTestSuite.java:127)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:345)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1009)
+</error>
+    <system-out>getInstances
+
+--- Exception caught ---
+
+Message:   Połączenie odrzucone. Sprawdź, czy prawidłowo ustawiłeś nazwę hosta oraz port i upewnij się, czy postmaster przyjmuje połączenia TCP/IP.
+SQLState:  08004
+ErrorCode: 0
+
+
+--- Exception caught ---
+
+Message:   Not connected, please connect first!
+
+</system-out>
+  </testcase>
 </testsuite>

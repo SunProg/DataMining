@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="3.396" errors="0" skipped="0" tests="3" name="pl.edu.agh.ftj.datamining.dbapi.plaintext.PlainTextTest">
+<testsuite failures="0" time="3.169" errors="0" skipped="0" tests="3" name="pl.edu.agh.ftj.datamining.dbapi.plaintext.PlainTextTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.6.0_20\jre\bin"/>
@@ -19,7 +19,7 @@
     <property name="basedir" value="C:\Users\janek\Documents\NetBeansProjects\WekaDBApi\WekaDBApi"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.6.0_20\jre\lib\endorsed"/>
     <property name="os.arch" value="x86"/>
-    <property name="surefire.real.class.path" value="C:\Users\janek\AppData\Local\Temp\surefirebooter5681787468048139353.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\janek\AppData\Local\Temp\surefirebooter8792816424799794235.jar"/>
     <property name="java.io.tmpdir" value="C:\Users\janek\AppData\Local\Temp\"/>
     <property name="line.separator" value="
 "/>
@@ -59,7 +59,7 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
   </properties>
-  <testcase time="3.352" classname="pl.edu.agh.ftj.datamining.dbapi.plaintext.PlainTextTest" name="testGetData"/>
-  <testcase time="0.029" classname="pl.edu.agh.ftj.datamining.dbapi.plaintext.PlainTextTest" name="testException"/>
+  <testcase time="3.138" classname="pl.edu.agh.ftj.datamining.dbapi.plaintext.PlainTextTest" name="testGetData"/>
+  <testcase time="0.022" classname="pl.edu.agh.ftj.datamining.dbapi.plaintext.PlainTextTest" name="testException"/>
   <testcase time="0.001" classname="pl.edu.agh.ftj.datamining.dbapi.plaintext.PlainTextTest" name="testException2"/>
 </testsuite>
