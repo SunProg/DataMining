@@ -26,7 +26,7 @@ public class PlainTextTest {
     public void testGetData() {
         //dokonczyc test
         try {
-            String location = "data";
+            String location = "data/";
             String file = "contact-lenses.arff.csv";
             PlainText instance = new PlainText();
             
@@ -40,7 +40,7 @@ public class PlainTextTest {
             //sprawdzenie czy ilosc wynikow sie zgadza
             assertEquals(24, result.numInstances());
         } catch (DataSourceException ex) {
-            fail("Test failed.");
+            fail(ex.getMessage());
         }
     }
 
@@ -54,7 +54,7 @@ public class PlainTextTest {
         PlainText instance = new PlainText();
 
         try {
-            location = "data";
+            location = "data/";
             file = "contact-lenses.arff.csv";
             instance.getData(location, file);
         } catch (DataSourceException ex) {

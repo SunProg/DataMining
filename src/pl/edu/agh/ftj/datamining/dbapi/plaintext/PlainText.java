@@ -25,14 +25,13 @@ public class PlainText implements IDataSource{
     public Instances getData(String location, String file) throws DataSourceException{
         try{
             CSVLoader cvs = new CSVLoader();
-            cvs.setSource(new File(location+"\\"+file));
+            cvs.setSource(new File(location+file));
             return cvs.getDataSet();
         }catch(FileNotFoundException e){
             throw new DataSourceException("File not found. Please check configuration file.");
         }catch(IOException e){
             throw new DataSourceException("File not found or couldn't be opened. Please check configuration file.");
         }catch(Exception e){
-            e.printStackTrace();
             throw new DataSourceException("Unexpected exception while reading CSV source file: "+e.getMessage());
         }
     }
